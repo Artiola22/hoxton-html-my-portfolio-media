@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  width: 95vw;
+  display: grid;
+  grid-template-column: auto 1fr;
+  align-items: center;
+  background-color: grey;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+nav ul {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-flow: column;
+  color: white;
+  list-style: none;
+
+  justify-content: end;
+}
+header nav ul a {
+  text-decoration: none;
+}
+main {
+  display: grid;
+  grid-area: main;
+  background-color: coral;
+}
+
+.top-section {
+  display: grid;
+  background-color: rgb(80, 70, 70);
+  color: white;
+  border: solid 2px black;
+  margin: 100px;
+  place-items: center;
+  padding: 10px;
+}
+.top-section-title {
+  color: rgb(192, 192, 47);
+}
+.top-section-paragraph strong {
+  color: #4a94aa;
+  font-weight: 400;
+}
+
+/* .main-swine .main-lottary .main-ios {
+  display: grid;
+
+  border: solid 1px black;
+  margin: 100px;
+  text-align: center;
+} */
+
+#projects {
+  background-color: #ede6e2;
+  padding: 0.7rem;
+}
+#project h2,
+#education h2 {
+  text-align: center;
+}
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}
+.project-name-hoxton {
+  color: #fa795d;
+  text-align: left;
+  font-size: 1.5rem;
+  background-image: url("./images/hoxton-news.jpg.png");
+}
+.project-name-gmail {
+  color: #fa795d;
+  text-align: left;
+  font-size: 1.5rem;
+  background-image: url("./images/gmail-picture.jpg");
+}
+.project {
+  padding: 0.8rem;
+  outline: 1px solid black;
+  line-height: 2rem;
+  color: rgb(73, 72, 70);
+}
+.project a {
+  background-color: #fa795d;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 7px 55px;
+}
+.education-section {
+  display: grid;
+  grid-template-columns: minmax(300px, 500px);
+  grid-gap: 1rem;
+  justify-content: center;
+  padding: 10px;
+}
+.experience {
+  padding: 1rem;
+  background-color: #5bc3eb;
+}
+
+.experience-info {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.7fr;
+  grid-gap: 10px;
+  background-color: white;
+  color: rgb(73, 72, 72);
+  align-items: center;
+  background-color: #5bc3eb;
+}
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
